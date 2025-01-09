@@ -16,8 +16,8 @@ java {
 repositories {
 	mavenCentral()
 }
-sourceCompatibility = '11' // or 17
-targetCompatibility = '11' // or 17
+sourceCompatibility = '21' // or 17
+targetCompatibility = '21' // or 17
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'

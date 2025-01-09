@@ -1,5 +1,5 @@
 # Use an official OpenJDK 21 image as a parent image
-FROM openjdk:21-jdk-slim
+FROM openjdk:21-jdk-slim as builder
 
 # Set the working directory in the container
 WORKDIR /app
@@ -9,7 +9,7 @@ COPY gradlew .
 COPY gradle gradle
 COPY build.gradle .
 COPY settings.gradle .
-"C:\Users\dines\OneDrive\Desktop\BackApp2\SarchKaro\build\libs\SarchKaro-0.0.1-SNAPSHOT.jar"
+
 # Copy the source code into the container (optional, if you want to build the project inside the container)
 COPY src src
 
